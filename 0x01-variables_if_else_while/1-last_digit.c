@@ -3,7 +3,8 @@
 #include <time.h>
 /* more headers goes there*/
 /**
- * main - main function to generate a random number
+ * main - Entry Point
+ *
  *
  * Return: Always 0 (Success)
  *
@@ -24,5 +25,6 @@ printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
 else
 {
 printf("Last digit of %d is %d and is 0\n", n, n % 10);
+}
 return (0);
 }
