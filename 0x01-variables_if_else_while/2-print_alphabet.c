@@ -1,18 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - Entry Point
+ * main - returns alphabets
  *
  * Return: Always 0 (Success)
  */
 int main(void)
+{int ch = 'a';
+while (ch <= 'z')
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
-{
-if ((c == 'q' || c == 'e') != 1)
-{
-putchar(c);
-}
+putchar(ch;)
+ch++;
+
 }
 putchar('\n');
 return (0);
