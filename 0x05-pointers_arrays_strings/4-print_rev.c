@@ -4,7 +4,7 @@
  * function that prints a string, in reverse, followed by a new line
  * Return: Always success
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 int i = 0;
 int o;
