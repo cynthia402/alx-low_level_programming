@@ -4,17 +4,15 @@
  * function that changes all lowercase letters of a string to uppercase.
  * Return: Always
  */
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
-int length;
-length = 0;
-while (word[length] != '\0')
+int i;
+i = 0;
+while (n[i] != '\0')
 {
-if (word[length] >= 97 && word[length] <= 122)
-{
-word[length] = word[length] - 32;
+if (n[i] >= 'a' && n[i] <= 'z')
+n[i] = n[i] - 32;
+i++;
 }
-length++;
-}
-return (word);
+return (n);
 }
