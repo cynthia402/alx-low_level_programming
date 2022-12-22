@@ -4,7 +4,7 @@
  * function that capitalizes all words of a string
  * Return Sucess
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 int index = 0;
 while (str[index])
