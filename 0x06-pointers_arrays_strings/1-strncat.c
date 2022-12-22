@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * function that concatenates two strings
- * Return: Success
+ * function that concatenates two strings.
+ * Return sucess
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int i;
 int j;
@@ -14,7 +14,7 @@ while (dest[i] != '\0')
 i++;
 }
 j = 0;
-while (src[j] != '\0')
+while (j < n && src[j] != '\0')
 {
 dest[i] = src[j];
 i++;
