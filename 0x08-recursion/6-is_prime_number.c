@@ -4,17 +4,33 @@
  *
  * Return: 1 if n is a prime number, 0 if not
  */
-int is_prime_number(int n)
+int evaluate_num(int num, int iterator)
 {
-if (n <= 1)
-return (0);
-return (actual_prime(n, n - 1));
-}
-int actual_prime(int n, int i)
+if (iterator == num - 1)
 {
-if (i == 1)
 return (1);
-if (n % i == 0 && i > 0)
+}
+else if (num % iterator == 0)
+{
 return (0);
-return (actual_prime(n, i - 1));
+}
+if (num % iterator != 0)
+{
+return (evaluate_num(num, iterator + 1));
+}
+return (0);
+}
+int is_prime_number(int num)
+{
+int iterator;
+iterator = 2;
+if (num < 2)
+{
+return (0);
+}
+if (num == 2)
+{
+return (1);
+}
+return (evaluate_num(num, iterator));
 }
