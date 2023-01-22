@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 /** print_strings - prints str
-@separator: pointer param
-@n: param
-/
+* @separator: pointer param
+* @n: param
+*/
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list valist;
