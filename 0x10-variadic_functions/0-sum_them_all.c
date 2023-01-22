@@ -4,18 +4,13 @@
  *  @n: param
  *  Return: int
  */
-int sum_them_all(const unsigned int n, ...
+int sum_them_all(const unsigned int n, ...)
 {
-va_list vls;
-unsigned int i = 0;
-va_start(vls, n);
-while (i < n)
-{
-printf("%d", va_arg(vls, int));
-i++;
-if (i < n && (separator))
-printf("%s", separator);
-}
-putchar(10);
-va_end(vls);
+va_list ap;
+unsigned int i, sum = 0;
+va_start(ap, n);
+for (i = 0; i < n; i++)
+sum += va_arg(ap, int);
+va_end(ap);
+return (sum);
 }
